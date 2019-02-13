@@ -25,6 +25,8 @@ Plots2::Application.configure do
   # Add non-concatenated scripts
   config.assets.precompile += ['dragdrop.js', 'post.js']
 
+  config.secret_key_base = 'b94eab2023b136963536f03101d9651a3da22f20c458b443deaf32d2c2256a3e766a6e91ee76eb44e0bd34ef9dedd64b0529a53233f06fc91eae814177c18590'
+
   # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH
 

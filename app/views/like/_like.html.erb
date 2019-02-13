@@ -99,6 +99,7 @@
       });
 
       <% if current_user %>
+        setLikeState(<%= node.liked_by(current_user.uid) =%>);
         $('#like-button-<%= node.id %>').on('click',<% if node.liked_by(current_user.uid) %>clickliked<% else %>clicknotliked<% end %>)
       
         if(window.location.href.includes("#like")) {
